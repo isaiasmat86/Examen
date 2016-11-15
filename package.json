@@ -1,0 +1,13 @@
+{
+
+  "dependencies": {
+
+    "sqlite3": "*",
+
+    "ejs": "*",
+
+    "express": "*"
+
+  }
+
+}

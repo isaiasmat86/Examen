@@ -1,0 +1,75 @@
+<h1>***BUSCAR CONTACTOS***</h1>
+<img width = "100px" src="/buscar.jpg"><br><br>
+
+
+
+<form action="Buscar" method="get">
+Nombre: <br>
+
+<input type ="text" name="Nombre" value="<%= query.Nombre %>"/><br><br>
+
+
+<input type="submit" value= "Buscar Contacto"/>
+
+
+
+<a href="/Inicio">
+  <input type="buttom" value= "Volver Pagina Principal"/><br><br>
+</a>
+
+</ul>
+</form>
+
+<%if(Resultados){ %>
+<table class="table table-bordered" cellpadding="7">
+<tbody>
+<th>Nombre</th>
+
+  <th>Telefono</th>
+
+  <th>Correo</th>  
+
+  <th>Identidad</th>
+
+  <th>Direccion</th>   <% for(var i=0;i<Resultados.length;i++) { %>
+
+   <tr>
+
+    <td align = "center">
+
+      <%= Resultados[i].Nombre %>
+
+    </td> 
+
+    <td align = "center">
+
+      <%= Resultados[i].Telefono %>
+
+    </td>
+
+    <td align = "center">
+
+      <%= Resultados[i].Correo %>
+    </td>
+
+   <td align = "center">
+
+      <%= Resultados[i].Identidad %>
+    </td>
+
+    <td align = "center">
+
+      <%= Resultados[i].Direccion %>
+    </td>
+
+
+
+  </tr>
+
+  <% } %>
+
+ </tbody>
+
+<% } %>
+ </table>
+

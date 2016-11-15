@@ -1,0 +1,59 @@
+<h1>***SUS CONTACTOS***</h1>
+<img width = "100px" src="/agenda2.gif"><br><br>
+
+<table class="table table-bordered" cellpadding="7">
+<tbody>
+<th>Nombre</th>
+
+  <th>Telefono</th>
+
+  <th>Correo</th>  
+
+  <th>Identidad</th>
+
+  <th>Direccion</th>   <% for(var i=0;i<Contactos.length;i++) { %>
+
+   <tr>
+
+    <td align = "center">
+
+      <%= Contactos[i][0] %>
+
+    </td> 
+
+    <td align = "center">
+
+      <%= Contactos[i][1] %>
+
+    </td>
+
+    <td align = "center">
+
+      <%= Contactos[i][2] %>
+    </td>
+
+   <td align = "center">
+
+      <%= Contactos[i][3] %>
+    </td>
+
+    <td align = "center">
+
+      <%= Contactos[i][4] %>
+    </td>
+
+
+
+  </tr>
+
+  <% } %>
+
+ </tbody>
+
+ </table>
+
+<br><br><br><br>
+
+<a href="/Inicio">
+  <input type="buttom" value= "Volver Pagina Principal"/><br><br>
+</a>

@@ -1,0 +1,104 @@
+<h1>***EDITAR CONTACTO***</h1>
+<img width = "100px" src="/editar1.jpg"><br><br>
+
+<table class="table table-bordered" cellpadding="7">
+<tbody>
+<th>Nombre</th>
+
+  <th>Telefono</th>
+
+  <th>Correo</th>  
+
+  <th>Identidad</th>
+
+  <th>Direccion</th>   <% for(var i=0;i<Contactos.length;i++) { %>
+
+   <tr>
+
+    <td align = "center">
+
+      <%= Contactos[i][0] %>
+
+    </td> 
+
+    <td align = "center">
+
+      <%= Contactos[i][1] %>
+
+    </td>
+
+    <td align = "center">
+
+      <%= Contactos[i][2] %>
+    </td>
+
+   <td align = "center">
+
+      <%= Contactos[i][3] %>
+    </td>
+
+    <td align = "center">
+
+      <%= Contactos[i][4] %>
+    </td>
+
+
+
+  </tr>
+
+  <% } %>
+
+ </tbody>
+
+ </table>
+
+<br><br><br><br>
+
+<form action="Editar" method=""get>
+
+Nombre a Modificar:
+<input type ="text" name="Nombre"/>
+Nombre Nuevo:
+<input type ="text" name="Nombre1"/><br><br>
+
+
+Correo a Modificar:
+<input type ="text" name="Correo"/>
+Correo Nuevo:
+<input type ="text" name="Correo1"/><br><br>
+
+
+
+Telefono a Modificar:
+<input type ="text" name="Telefono"/>
+Telefono Nuevo:
+<input type ="text" name="Telefono1"/><br><br>
+
+
+
+Identidad a Modificar:
+<input type ="text" name="Identidad"/>
+Identidad Nuevo:
+<input type ="text" name="Identidad1"/><br><br>
+
+
+
+Direccion a Modificar:
+<input type ="text" name="Direccion"/>
+Direccion Nuevo:
+<input type ="text" name="Direccion1"/><br><br>
+
+
+
+
+<input type="submit" value= "Editar Contacto"/>
+
+<a href="/Inicio">
+
+  <input type="buttom" value= "Volver Pagina Principal"/><br><br>
+
+</a>
+
+</ul>
+</form>
+
